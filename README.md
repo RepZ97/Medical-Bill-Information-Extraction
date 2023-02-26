@@ -10,5 +10,5 @@ Imported Libraries:
     import json
 
 Installations:
-pdf2image, link:- https://pypi.org/project/pdf2image/
-pytesseract should be installed in the local enviorenment, link:- https://pypi.org/ project/pytesseract/
+    pdf2image, link:- https://pypi.org/project/pdf2image/
+    pytesseract should be installed in the local enviorenment, link:- https://pypi.org/ project/pytesseract/
