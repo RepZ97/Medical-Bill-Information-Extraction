@@ -1,22 +1,63 @@
-Medical Bill Information Extractor project to automatically extract relevant information from medical bills using optical character recognition (OCR) technology, along with Google Tesseract, OpenCV2, and regular expressions. The system takes an input image of a medical bill and extracts important data such as patient name, provider name, service codes, and payment amounts, which can be used for further analysis and processing.
+# Medical Bill Information Extractor
 
-The project utilizes advanced computer vision techniques with OpenCV2 to preprocess the input image, which enhances the accuracy of OCR. Regular expressions are used to extract the relevant information from the text recognized by Tesseract OCR. The extracted information is then stored in a structured format, such as a JSON, for further use.
+## Project Overview
 
-Overall, this project provides a convenient and efficient solution for the extraction of information from medical bills, which can significantly reduce the manual effort involved in this task. The project is available on GitHub, making it open-source and accessible for anyone to contribute and use.
+The Medical Bill Information Extractor is a project designed to automatically extract relevant information from medical bills using Optical Character Recognition (OCR) technology. This project leverages Google Tesseract, OpenCV2, and regular expressions to process and extract crucial data such as patient names, provider names, service codes, and payment amounts from input images of medical bills.
+
+The extracted information is stored in a structured format (e.g., JSON) for further analysis and processing. This project aims to streamline the extraction process, significantly reducing the manual effort involved in handling medical bills.
+
+## Features
+
+- **OCR Technology**: Utilizes Google Tesseract for text recognition.
+- **Image Processing**: Employs OpenCV2 for image preprocessing to enhance OCR accuracy.
+- **Data Extraction**: Uses regular expressions to extract specific information from recognized text.
+- **Structured Output**: Stores extracted data in structured formats such as JSON.
+- **Open Source**: Available on GitHub for anyone to contribute and use.
+
+## Requirements
+
+To run this project, you need the following libraries and tools installed:
+
+- `opencv-python`
+- `Pillow`
+- `numpy`
+- `pdf2image`
+- `pytesseract`
+- `matplotlib`
+
+## Installation
+
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/RepZ97/Medical-Bill-Information-Extraction.git
+    cd Medical-Bill-Information-Extraction
+    ```
+
+2. **Set Up a Virtual Environment**:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+
+3. **Install Required Libraries**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. **Install `pdf2image`**:
+    ```sh
+    pip install pdf2image
+    ```
+
+5. **Install and Configure Tesseract OCR**:
+    - Download and install Tesseract OCR from the following link: [pytesseract](https://pypi.org/project/pytesseract/).
+    - Make sure Tesseract is added to your system's PATH.
 
 
+## Contributing
 
-Imported Libraries:
+Contributions are welcome! Please fork the repository and submit pull requests with your improvements.
 
-    import cv2
-    from PIL import Image
-    import numpy as np
-    from pdf2image import convert_from_path
-    import pytesseract
-    from matplotlib import pyplot as plt
-    import re
-    import json
+## License
 
-Installations:
-    pdf2image, link:- https://pypi.org/project/pdf2image/
-    pytesseract should be installed in the local enviorenment, link:- https://pypi.org/ project/pytesseract/
+This project is licensed under the [MIT License](LICENSE).
